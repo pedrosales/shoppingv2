@@ -12,8 +12,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.all(10),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+        child: ListView(
           children: <Widget>[
             SizedBox(
               height: 60,
