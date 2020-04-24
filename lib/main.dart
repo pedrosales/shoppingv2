@@ -4,7 +4,7 @@ import 'package:shopping/blocs/cart.bloc.dart';
 import 'package:shopping/blocs/home.bloc.dart';
 import 'package:shopping/blocs/theme.bloc.dart';
 import 'package:shopping/blocs/user.bloc.dart';
-import 'package:shopping/ui/android/pages/tabs.page.dart';
+import 'package:shopping/ui/ios/pages/tabs.page.dart';
 
 void main() => runApp(MyApp());
 
@@ -41,10 +41,11 @@ class Main extends StatelessWidget {
       title: 'Shopping Cart',
       debugShowCheckedModeBanner: false,
       theme: bloc.theme,
-      home: DefaultTabController(
-        length: 3,
-        child: TabsPage(),
-      ),
+      home: TabsPage(),
+      // home: DefaultTabController(
+      //   length: 3,
+      //   child: TabsPage(),
+      // ),
     );
   }
 }
