@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping/ui/android/pages/cart.page.dart';
 import 'package:shopping/ui/android/pages/home.page.dart';
 
 class TabsPage extends StatelessWidget {
@@ -8,9 +9,7 @@ class TabsPage extends StatelessWidget {
       body: TabBarView(
         children: <Widget>[
           HomePage(),
-          Container(
-            color: Colors.red,
-          ),
+          CartPage(),
           Container(
             color: Colors.green,
           ),
