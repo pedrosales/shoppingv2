@@ -4,7 +4,7 @@ class UserModel {
   String email;
   String image;
   String username;
-  Null password;
+  String password;
   String role;
   String token;
 
